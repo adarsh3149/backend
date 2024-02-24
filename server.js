@@ -7,8 +7,8 @@ const contactRoute = require("./router/contact-route");
 const serviceRoute = require("./router/service-route");
 const errorMiddleware = require("./middlewares/error-middleware");
 const connectDB = require("./utils/db");
+const PORT = process.env.PORT || 5000;
 
-const PORT = 5000;
 const corsOptions = {
   origin: "http://localhost:5173",
   methods: "POST,GET,PUT,DELETE,HEAD,PATCH",
