@@ -11,8 +11,7 @@ const connectDB = require("./utils/db");
 const PORT = process.env.PORT || 8000;
 
 const corsOptions = {
-  origin: ["http://localhost:5173",
-            "https://mernbackend1.netlify.app"],
+  origin: "https://mernbackend1.netlify.app",
   methods: "POST,GET,PUT,DELETE,HEAD,PATCH",
   credentials: true,
 };
